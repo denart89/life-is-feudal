@@ -1,0 +1,190 @@
+@import "../vars";
+@import "../mixins";
+
+.section-1 {
+  padding-top: 57.135%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  @media #{$large-breakpoint} {
+    min-height: px2vw(590, $large-width);
+  }
+
+  @media #{$medium-breakpoint} {
+    min-height: px2vw(590, $medium-width);
+  }
+
+  @media #{$small-breakpoint} {
+    min-height: px2vw(500, $small-width);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    @media #{$large-breakpoint} {
+      padding-top: px2vw(38, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      padding-top: px2vw(25, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      padding-top: px2vw(25, $small-width);
+    }
+  }
+
+  &__bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  &__main-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(242, $large-width);
+      height: px2vw(263, $large-width);
+      margin-bottom: px2vw(50, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(157, $medium-width);
+      height: px2vw(170, $medium-width);
+      margin-bottom: px2vw(32, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(82, $small-width);
+      height: px2vw(88, $small-width);
+      margin-bottom: px2vw(17, $small-width);
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__headline {
+    @media #{$large-breakpoint} {
+      margin-bottom: px2vw(20, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      margin-bottom: px2vw(13, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      margin-bottom: px2vw(13, $small-width);
+    }
+  }
+
+  &__description {
+    @media #{$large-breakpoint} {
+      margin-bottom: px2vw(50, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      margin-bottom: px2vw(32, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      margin-bottom: px2vw(32, $small-width);
+    }
+  }
+
+  &__text-with-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $pt-sans;
+    color: $color-white;
+
+    @media #{$large-breakpoint} {
+      font-size: px2vw(24, $large-width);
+      margin: px2vw(85, $large-width) 0;
+      text-shadow: 0 px2vw(4, $large-width) px2vw(38, $large-width) $color-black;
+    }
+
+    @media #{$medium-breakpoint} {
+      font-size: px2vw(16, $medium-width);
+      margin: px2vw(55, $medium-width) 0;
+      text-shadow: 0 px2vw(2, $medium-width) px2vw(24, $medium-width) $color-black;
+    }
+
+    @media #{$small-breakpoint} {
+      font-size: px2vw(12, $small-width);
+      margin: px2vw(28, $small-width) 0;
+      text-shadow: 0 px2vw(2, $small-width) px2vw(12, $small-width) $color-black;
+    }
+  }
+
+  &__ltg-logo {
+    display: block;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(72, $large-width);
+      height: px2vw(40, $large-width);
+      margin-left: px2vw(10, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(47, $medium-width);
+      height: px2vw(26, $medium-width);
+      margin-left: px2vw(7, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(47, $small-width);
+      height: px2vw(26, $small-width);
+      margin-left: px2vw(4, $small-width);
+    }
+  }
+
+  &__go-to-section {
+    background: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(34, $large-width);
+      height: px2vw(32, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(22, $medium-width);
+      height: px2vw(20, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(22, $small-width);
+      height: px2vw(20, $small-width);
+    }
+  }
+
+  &__go-to-section-icon {
+    width: 100%;
+    height: 100%;
+  }
+}

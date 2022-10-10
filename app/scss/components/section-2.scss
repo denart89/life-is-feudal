@@ -1,0 +1,283 @@
+@import "../vars";
+@import "../mixins";
+
+.section-2 {
+  display: flex;
+  align-items: center;
+  padding-top: 52.65%;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+
+  @media #{$large-breakpoint} {
+    min-height: px2vw(465, $large-width);
+    margin-top: px2vw(-93, $large-width);
+  }
+
+  @media #{$medium-breakpoint} {
+    min-height: px2vw(465, $medium-width);
+    margin-top: px2vw(-60, $medium-width);
+  }
+
+  @media #{$small-breakpoint} {
+    min-height: px2vw(400, $small-width);
+    margin-top: px2vw(-30, $small-width);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    @media #{$large-breakpoint} {
+      padding-top: px2vw(92, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      padding-top: px2vw(60, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      padding-top: px2vw(30, $small-width);
+    }
+  }
+
+  &__bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__headline {
+    @media #{$large-breakpoint} {
+      margin-bottom: px2vw(20, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      margin-bottom: px2vw(13, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      margin-bottom: px2vw(13, $small-width);
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(776, $medium-width);
+      margin: auto;
+    }
+    
+    @media #{$small-breakpoint} {
+
+    }
+  }
+
+  &__slider-container {
+    background: url("../../img/character-bg.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(856, $large-width);
+      height: px2vw(577, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(552, $medium-width);
+      height: px2vw(372, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      height: px2vw(240, $small-width);
+    }
+  }
+
+  &__slider-items {
+    display: flex;
+  }
+
+  &__slider-item {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__slider-image-wrapper {
+    position: absolute;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(242, $large-width);
+      height: px2vw(498, $large-width);
+      top: px2vw(50, $large-width);
+      left: px2vw(83, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(156, $medium-width);
+      height: px2vw(322, $medium-width);
+      top: px2vw(30, $medium-width);
+      left: px2vw(53, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(80, $small-width);
+      height: px2vw(166, $small-width);
+      top: px2vw(15, $small-width);
+      left: px2vw(0, $small-width);
+    }
+  }
+
+  &__slider-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media #{$large-breakpoint} {
+      width: px2vw(326, $large-width);
+      height: px2vw(583, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(211, $medium-width);
+      height: px2vw(377, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(96, $small-width);
+      height: px2vw(171, $small-width);
+    }
+  }
+
+  &__slider-info {
+    @media #{$large-breakpoint} {
+      padding: px2vw(72, $large-width) px2vw(70, $large-width) 0 px2vw(371, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      padding: px2vw(46, $medium-width) px2vw(45, $medium-width) 0 px2vw(240, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      padding: px2vw(24, $small-width) 0 0 px2vw(90, $small-width);
+    }
+  }
+
+  &__slider-headline {
+    @media #{$large-breakpoint} {
+      margin-bottom: px2vw(27, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      margin-bottom: px2vw(17, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      margin-bottom: px2vw(12, $small-width);
+    }
+  }
+
+  &__slider-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: background-image 700ms ease;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(246, $large-width);
+      height: px2vw(393, $large-width);
+      top: px2vw(62, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(158, $medium-width);
+      height: px2vw(254, $medium-width);
+      top: px2vw(40, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      display: none;
+    }
+
+    &--left {
+      @media #{$large-breakpoint} {
+        left: px2vw(-18, $large-width);
+      }
+      
+      @media #{$medium-breakpoint} {
+        left: px2vw(-12, $large-width);
+      }
+      
+      @media #{$small-breakpoint} {
+      
+      }
+    }
+
+    &--right {
+      @media #{$large-breakpoint} {
+        right: px2vw(-18, $large-width);
+      }
+      
+      @media #{$medium-breakpoint} {
+        right: px2vw(-12, $large-width);
+      }
+      
+      @media #{$small-breakpoint} {
+      
+      }
+    }
+  }
+
+  &__slider-arrow {
+    background: url("../../img/arrow.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media #{$large-breakpoint} {
+      width: px2vw(33, $large-width);
+      height: px2vw(49, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(21, $medium-width);
+      height: px2vw(31, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+
+    }
+
+    &--right {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+}

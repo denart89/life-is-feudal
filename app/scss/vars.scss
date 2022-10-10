@@ -1,0 +1,21 @@
+$large-breakpoint: '(min-width: 1240px)';
+$medium-breakpoint: '(min-width: 641px) and (max-width: 1239px)';
+$small-breakpoint: '(max-width: 640px)';
+
+$large-width: 1920px;
+$medium-width: 1240px;
+$small-width: 365px;
+
+/* Fonts */
+$ubuntu: 'Ubuntu', sans-serif;
+$garamond: 'EB Garamond', serif;
+$pt-sans: 'PT Sans', sans-serif;
+
+/* Colors */
+$color-black: #000000;
+$color-dark: #1e1e1e;
+$color-white: #ffffff;
+$color-yellow: #EBCC27;
+$color-grey: #D2D6DA;
+
+$easing: 350ms ease;

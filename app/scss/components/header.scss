@@ -1,0 +1,213 @@
+@import "../vars";
+
+$root: '.header';
+
+.header {
+  background: url("../../img/header.svg") top center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+
+  @media #{$large-breakpoint} {
+    height: px2vw(108, $large-width);
+    padding-top: px2vw(21, $large-width);
+  }
+
+  @media #{$medium-breakpoint} {
+    height: px2vw(70, $medium-width);
+    padding-top: px2vw(14, $medium-width);
+  }
+
+  @media #{$small-breakpoint} {
+    height: px2vw(42, $small-width);
+  }
+
+  &__menu {
+    @media #{$medium-breakpoint}, #{$small-breakpoint} {
+      background: $color-dark;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      transform: translateX(100%);
+      opacity: 0;
+      transition: $easing;
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(400, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(250, $small-width);
+    }
+
+    &.is-opened {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  &__menu-wrapper {
+    @media #{$large-breakpoint} {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__menu-link {
+    color: $color-white;
+    text-decoration: none;
+    display: block;
+
+    @media #{$large-breakpoint} {
+      font-size: px2vw(21, $large-width);
+      line-height: px2vw(43, $large-width);
+      margin: 0 px2vw(25, $large-width);
+      text-shadow: 0 px2vw(4, $large-width) px2vw(38, $large-width) $color-black;
+    }
+
+    @media #{$medium-breakpoint} {
+      font-size: px2vw(14, $medium-width);
+      line-height: px2vw(28, $medium-width);
+      margin: px2vw(12, $medium-width);
+      text-shadow: 0 px2vw(2, $medium-width) px2vw(24, $medium-width) $color-black;
+    }
+
+    @media #{$small-breakpoint} {
+      font-size: px2vw(14, $small-width);
+      line-height: px2vw(28, $small-width);
+      margin: px2vw(12, $small-width);
+      text-shadow: 0 px2vw(2, $small-width) px2vw(12, $small-width) $color-black;
+    }
+
+    &--cta {
+      color: $color-yellow;
+    }
+  }
+
+  &__menu-logo {
+    display: block;
+    margin: auto;
+
+    @media #{$large-breakpoint} {
+      width: px2vw(72, $large-width);
+      height: px2vw(40, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      width: px2vw(46, $medium-width);
+      height: px2vw(26, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: px2vw(46, $small-width);
+      height: px2vw(26, $small-width);
+    }
+  }
+
+  &__burger-menu {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+
+    @media #{$large-breakpoint} {
+      display: none;
+    }
+
+    @media #{$medium-breakpoint} {
+      width: 32px;
+      height: 32px;
+      top: px2vw(10, $medium-width);
+      right: px2vw(20, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      width: 32px;
+      height: 32px;
+      top: 50%;
+      right: px2vw(10, $small-width);
+      transform: translateY(-50%);
+    }
+
+    &.is-active {
+      #{$root}__burger-line {
+        &--1 {
+          @media #{$medium-breakpoint} {
+            transform: translate3d(0, 9px, 0) rotate(45deg);
+          }
+
+          @media #{$small-breakpoint} {
+            transform: translate3d(0, 7px, 0) rotate(45deg);
+          }
+        }
+
+        &--2 {
+          opacity: 0;
+        }
+
+        &--3 {
+          @media #{$medium-breakpoint} {
+            transform: translate3d(0, -9px, 0) rotate(-45deg);
+          }
+
+          @media #{$small-breakpoint} {
+            transform: translate3d(0, -7px, 0) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__burger-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media #{$medium-breakpoint} {
+      width: 26px;
+      height: 20px;
+    }
+
+    @media #{$small-breakpoint} {
+      width: 22px;
+      height: 16px;
+    }
+  }
+
+  &__burger-line {
+    background: $color-white;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    perspective-origin: center;
+    transition: $easing;
+
+    &--1 {
+      top: 0;
+    }
+
+    &--2 {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &--3 {
+      bottom: 0;
+    }
+  }
+}

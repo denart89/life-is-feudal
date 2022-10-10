@@ -1,0 +1,79 @@
+@import "../mixins";
+@import "../vars";
+
+.headline {
+  font-family: $garamond;
+  font-weight: 500;
+  color: $color-white;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media #{$large-breakpoint} {
+    font-size: px2vw(50, $large-width);
+    line-height: px2vw(48, $large-width);
+    text-shadow: 0 px2vw(4, $large-width) px2vw(34, $large-width) rgba(0, 0, 0, 0.86);
+  }
+
+  @media #{$medium-breakpoint} {
+    font-size: px2vw(32, $medium-width);
+    line-height: px2vw(31, $medium-width);
+    text-shadow: 0 px2vw(2, $medium-width) px2vw(22, $medium-width) rgba(0, 0, 0, 0.86);
+  }
+
+  @media #{$small-breakpoint} {
+    font-size: px2vw(17, $small-width);
+    line-height: px2vw(19, $small-width);
+    text-shadow: 0 px2vw(2, $small-width) px2vw(22, $small-width) rgba(0, 0, 0, 0.86);
+  }
+
+  &--big {
+    @media #{$large-breakpoint} {
+      font-size: px2vw(65, $large-width);
+      line-height: px2vw(63, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      font-size: px2vw(42, $medium-width);
+      line-height: px2vw(40, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      font-size: px2vw(22, $small-width);
+      line-height: px2vw(20, $small-width);
+    }
+  }
+
+  &--medium {
+    @media #{$large-breakpoint} {
+      font-size: px2vw(48, $large-width);
+      line-height: px2vw(46, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      font-size: px2vw(31, $medium-width);
+      line-height: px2vw(29, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      font-size: px2vw(16, $small-width);
+      line-height: px2vw(15, $small-width);
+    }
+  }
+
+  &--small {
+    @media #{$large-breakpoint} {
+      font-size: px2vw(39, $large-width);
+      line-height: px2vw(38, $large-width);
+    }
+
+    @media #{$medium-breakpoint} {
+      font-size: px2vw(25, $medium-width);
+      line-height: px2vw(24, $medium-width);
+    }
+
+    @media #{$small-breakpoint} {
+      font-size: px2vw(13, $small-width);
+      line-height: px2vw(12, $small-width);
+    }
+  }
+}

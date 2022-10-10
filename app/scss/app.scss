@@ -1,0 +1,47 @@
+@import "vars";
+@import "mixins";
+
+html {
+  box-sizing: border-box;
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background: $color-dark;
+  font-family: $ubuntu;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+
+  &:before {
+    content: '';
+    background: url("../../img/desktop.png") no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0.3;
+    display: none;
+  }
+}
+
+/* Elements */
+@import "elements/headline";
+@import "elements/description";
+@import "elements/button";
+@import "elements/container";
+
+/* Components */
+@import "components/header";
+@import "components/section-1";
+@import "components/section-2";
+@import "components/section-3";
+@import "components/section-4";

@@ -1,0 +1,13 @@
+@import "../vars";
+
+.container {
+  @media #{$large-breakpoint} {
+    width: px2vw(1200, $large-width);
+    margin: 0 auto;
+  }
+
+  @media #{$medium-breakpoint}, #{$small-breakpoint} {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

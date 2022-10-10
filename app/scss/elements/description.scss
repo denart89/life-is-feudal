@@ -1,0 +1,48 @@
+@import "../vars";
+@import "../mixins";
+
+.description {
+  color: $color-white;
+  margin: 0;
+
+  @media #{$large-breakpoint} {
+    font-size: px2vw(22, $large-width);
+    line-height: px2vw(30, $large-width);
+  }
+
+  @media #{$medium-breakpoint} {
+    font-size: px2vw(14, $medium-width);
+    line-height: px2vw(20, $medium-width);
+  }
+
+  @media #{$small-breakpoint} {
+    font-size: px2vw(12, $small-width);
+    line-height: px2vw(17, $small-width);
+
+    br {
+      display: none;
+    }
+  }
+  
+  &--grey {
+    color: $color-grey;
+  }
+
+  p {
+    margin: 0;
+
+    & + p {
+      @media #{$large-breakpoint} {
+        margin-top: px2vw(30, $large-width);
+      }
+
+      @media #{$medium-breakpoint} {
+        margin-top: px2vw(18, $medium-width);
+      }
+
+      @media #{$small-breakpoint} {
+        margin-top: px2vw(8, $small-width);
+      }
+    }
+  }
+}

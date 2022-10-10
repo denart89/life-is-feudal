@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@function strip-unit($value) {
+  @if ($value == null) {
+    @return null;
+  }
+
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function px2vw($value, $size) {
+  $size-px: strip-unit($value);
+  $layout-size-px: strip-unit($size);
+
+  @return math.div($size-px, $layout-size-px) * 100vw;
+}

@@ -1,0 +1,13 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Code editor
+.idea
+
+# Additional files
+*.log*
+node_modules/
+
+# Build
+build

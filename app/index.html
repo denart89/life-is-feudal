@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Life is Feudal</title>
+
+    <meta name="description" content="Some description">
+    <meta name="keywords" content="LTG, Life is Feudal">
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=PT+Sans&family=Ubuntu:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./.temp/css/app.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="header__menu js-mobile-menu">
+        <div class="header__menu-wrapper">
+            <a href="#about" class="header__menu-link">About</a>
+            <a href="#features" class="header__menu-link">Features</a>
+            <a href="#materials" class="header__menu-link">Materials</a>
+            <a href="#community" class="header__menu-link">Community</a>
+            <a href="#" class="header__menu-link header__menu-link--cta">Play now</a>
+            <a href="#" class="header__menu-link">
+                <img src="./img/ltg-logo.png" class="header__menu-logo" alt="LTG logo" width="71" height="39">
+            </a>
+        </div>
+    </nav>
+
+    <button type="button" class="header__burger-menu js-burger-button">
+        <span class="header__burger-wrapper">
+            <span class="header__burger-line header__burger-line--1"></span>
+            <span class="header__burger-line header__burger-line--2"></span>
+            <span class="header__burger-line header__burger-line--3"></span>
+        </span>
+    </button>
+</header>
+
+<section id="about" class="section-1">
+    <div class="section-1__wrapper">
+        <div class="container">
+            <picture>
+                <source srcset="./img/life-is-feudal.webp" type="image/webp">
+                <source srcset="./img/life-is-feudal.png" type="image/png">
+
+                <img class="section-1__main-logo" src="./img/life-is-feudal.png" alt="Life is Feudal logo" width="242"
+                     height="263">
+            </picture>
+
+            <div class="section-1__content">
+                <h1 class="headline section-1__headline">
+                    Create Your Own<br>
+                    Medieval World
+                </h1>
+
+                <p class="description description--grey section-1__description">
+                    From awakening on the shores of Abella to dominating your feudal kingdom, you create your own story.<br>
+                    On this journey you craft, you build, you create, and you protect. This is your life to make your
+                    own.
+                </p>
+
+                <a href="#" class="button">
+                    <span class="button__text">Get the game</span>
+                </a>
+            </div>
+
+            <div class="section-1__text-with-logo">
+                Relaunched by
+
+                <img src="./img/ltg-logo.png" class="section-1__ltg-logo" alt="LTG logo">
+            </div>
+
+            <a href="#features" class="section-1__go-to-section">
+                <svg class="section-1__go-to-section-icon">
+                    <use xlink:href="./img/sprite.svg#go-to-section"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <picture>
+        <source srcset="./img/screen-1.webp" type="image/webp">
+        <source srcset="./img/screen-1.png" type="image/png">
+
+        <img class="section-1__bg-image" src="./img/screen-1.png" alt="Screen 1" width="1920" height="1097">
+    </picture>
+</section>
+
+<section id="features" class="section-2">
+    <div class="section-2__wrapper">
+        <div class="container">
+            <div class="section-2__content">
+                <h2 class="headline headline--big section-2__headline">Find your destiny</h2>
+
+                <p class="description">
+                    Forge your own path as you survive, build, fight as<br>
+                    one of three races
+                </p>
+            </div>
+
+            <div class="section-2__slider">
+                <div class="section-2__slider-container swiper">
+                    <div class="section-2__slider-items swiper-wrapper">
+                        <div class="section-2__slider-item swiper-slide">
+                            <div class="section-2__slider-image-wrapper">
+                                <picture>
+                                    <source srcset="./img/character-1.webp" type="image/webp">
+                                    <source srcset="./img/character-1.png" type="image/png">
+
+                                    <img class="section-2__slider-image js-slider-image" src="./img/character-1.png"
+                                         alt="Gottlungs"
+                                         width="326" height="583">
+                                </picture>
+                            </div>
+
+                            <div class="section-2__slider-info">
+                                <h3 class="headline headline--small section-2__slider-headline">Gottlungs</h3>
+
+                                <div class="description section-2__slider-description">
+                                    <p>The Gottlungs live on the most fertile grasslands and build massive spacious
+                                        houses on solid foundations. The Gottlungs are a fair and understanding race,
+                                        making them great craftsmen, diplomats, and travelers.</p>
+
+                                    <p>They were power holders in the Vulpian Empire. That’s why they look down on
+                                        neighboring nations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-2__slider-item swiper-slide">
+                            <div class="section-2__slider-image-wrapper">
+                                <picture>
+                                    <source srcset="img/character-2.webp" type="image/webp">
+                                    <source srcset="img/character-2.png" type="image/png">
+
+                                    <img class="section-2__slider-image js-slider-image" src="img/character-2.png"
+                                         alt="Prestratus"
+                                         width="326" height="583">
+                                </picture>
+                            </div>
+
+                            <div class="section-2__slider-info">
+                                <h3 class="headline headline--small section-2__slider-headline">Prestratus</h3>
+
+                                <div class="description section-2__slider-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque
+                                        blanditiis deserunt, dolore earum, inventore itaque labore nam neque nisi quis
+                                        repellendus rerum sapiente sint tempore temporibus veniam veritatis
+                                        voluptatem!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-2__slider-item swiper-slide">
+                            <div class="section-2__slider-image-wrapper">
+                                <picture>
+                                    <source srcset="./img/character-3.webp" type="image/webp">
+                                    <source srcset="./img/character-3.png" type="image/png">
+
+                                    <img class="section-2__slider-image js-slider-image" src="./img/character-3.png"
+                                         alt="Vikiran"
+                                         width="326" height="583">
+                                </picture>
+                            </div>
+
+                            <div class="section-2__slider-info">
+                                <h3 class="headline headline--small section-2__slider-headline">Vikiran</h3>
+
+                                <div class="description section-2__slider-description">
+                                    <p>They were power holders in the Vulpian Empire. That’s why they look down on
+                                        neighboring nations.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque
+                                        blanditiis deserunt, dolore earum, inventore itaque labore nam neque nisi quis
+                                        repellendus rerum sapiente sint tempore temporibus veniam veritatis
+                                        voluptatem!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button"
+                        class="section-2__slider-button section-2__slider-button--left js-slider-prev-button">
+                    <span class="section-2__slider-arrow character-arrow--left"></span>
+                </button>
+
+                <button type="button"
+                        class="section-2__slider-button section-2__slider-button--right js-slider-next-button">
+                    <span class="section-2__slider-arrow section-2__slider-arrow--right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <picture>
+        <source srcset="./img/screen-2.webp" type="image/webp">
+        <source srcset="./img/screen-2.png" type="image/png">
+
+        <img class="section-2__bg-image" src="./img/screen-2.png" alt="Screen 2" width="1920" height="1011">
+    </picture>
+</section>
+
+<section id="materials" class="section-3">
+    <div class="section-3__wrapper">
+        <div class="container">
+            <svg class="section-3__icon">
+                <use xlink:href="./img/sprite.svg#ico-1"></use>
+            </svg>
+
+            <h2 class="headline headline--medium section-3__headline">Expand Your Power</h2>
+
+            <p class="description">
+                As a leader, you certainly want your kingdom to bloom<br>
+                and flourish. Gather a group of your closest allies and<br>
+                establish a guild. Claim larger lands, form alliances with<br>
+                neighboring kingdoms, and establish a path to power.
+            </p>
+        </div>
+    </div>
+
+    <picture>
+        <source srcset="./img/screen-3.webp" type="image/webp">
+        <source srcset="./img/screen-3.png" type="image/png">
+
+        <img class="section-3__bg-image" src="./img/screen-3.png" alt="Screen 3" width="1919" height="932">
+    </picture>
+</section>
+
+<section id="community" class="section-4">
+    <div class="section-4__wrapper">
+        <div class="container">
+            <svg class="section-4__icon">
+                <use xlink:href="./img/sprite.svg#ico-2"></use>
+            </svg>
+
+            <div class="section-4__content">
+                <h2 class="headline headline--big section-4__headline">Start Your Adventure</h2>
+
+                <p class="description section-4__description">
+                    New frontiers call to you, feudalists. Prepare yourself for an epic<br>
+                    journey through the historical landscape of a Medieval world.
+                </p>
+
+                <a href="#" class="button">
+                    <span class="button__text">Play now</span>
+                </a>
+            </div>
+
+            <div class="section-4__social">
+                <a href="https://ru-ru.facebook.com/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://vk.com/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="https://discord.com/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#discord"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#youtube"></use>
+                    </svg>
+                </a>
+                <a href="https://www.twitch.tv/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#twitch"></use>
+                    </svg>
+                </a>
+                <a href="https://www.reddit.com/" class="section-4__social-link" target="_blank">
+                    <svg class="section-4__social-icon">
+                        <use xlink:href="./img/sprite.svg#reddit"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <footer class="section-4__footer">
+                <div class="section-4__footer-row">
+                    <div class="section-4__footer-col">
+                        <div class="section-4__footer-text">
+                            I agree to receive e-mail and other communications<br>
+                            from X.LA by subscribing. I can opt-out at any time.<br>
+                            By subscribing I agree that I have read and<br>
+                            understood the X.LA Privacy Policy below.
+                        </div>
+                    </div>
+
+                    <div class="section-4__footer-col">
+                        <img src="./img/ltg-big-logo.png" class="section-4__footer-logo" alt="LTG logo" width="182"
+                             height="82">
+                    </div>
+
+                    <div class="section-4__footer-col">
+                        <div class="section-4__footer-text section-4__footer-text--align-right">All rights reserved,<br>
+                            2022
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <picture>
+        <source srcset="./img/screen-4.webp" type="image/webp">
+        <source srcset="./img/screen-4.png" type="image/png">
+
+        <img class="section-4__bg-image" src="./img/screen-4.png" alt="Screen 4" width="1920" height="1120">
+    </picture>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./.temp/js/app.js"></script>
+
+</body>
+</html>
